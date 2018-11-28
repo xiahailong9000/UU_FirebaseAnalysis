@@ -1,0 +1,4 @@
+Assets/Firebase/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.84.0.dll
+Assets/Firebase/PlayServicesResolver/Editor/Google.JarResolver_v1.2.84.0.dll
+Assets/Firebase/PlayServicesResolver/Editor/Google.VersionHandler.dll
+Assets/Firebase/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.84.0.dll
