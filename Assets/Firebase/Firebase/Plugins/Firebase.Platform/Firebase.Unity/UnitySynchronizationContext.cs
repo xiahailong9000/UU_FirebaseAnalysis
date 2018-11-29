@@ -28,8 +28,9 @@ namespace Firebase.Unity {
             //    < Start > c__Iterator.$this = this;
             //    return < Start > c__Iterator;
             //}
+            //xia9000
             IEnumerator Start() {
-                uint num = (uint)this.$PC;
+                //uint num = (uint)this.$PC;
                 //this.$PC = -1;
                 //switch (num) {
                 //    case 0u:

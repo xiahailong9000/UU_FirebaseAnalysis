@@ -74,3 +74,4 @@ namespace Firebase.Platform.Security
 		}
 	}
 }
+

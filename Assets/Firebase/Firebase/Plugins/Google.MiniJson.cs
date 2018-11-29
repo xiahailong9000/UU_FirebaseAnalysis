@@ -110,20 +110,20 @@ namespace Google.MiniJSON {
                                         default:
                                             goto IL_8F;
                                     }
-                               
+
                                 case ']':
                                     this.json.Read();
                                     return Json.Parser.TOKEN.SQUARED_CLOSE;
                                 default:
                                     goto IL_7A;
                             }
-                         
+
                         case ':':
                             return Json.Parser.TOKEN.COLON;
                         default:
                             goto IL_65;
                     }
-                  
+
                 }
             }
 
@@ -147,7 +147,7 @@ namespace Google.MiniJSON {
                 this.json.Dispose();
                 this.json = null;
             }
-
+            //xia9000
             private Dictionary<string, object> ParseObject() {
                 Dictionary<string, object> dictionary = new Dictionary<string, object>();
                 this.json.Read();
@@ -156,9 +156,8 @@ namespace Google.MiniJSON {
                     switch (nextToken) {
                         case Json.Parser.TOKEN.NONE:
                             goto IL_37;
-                        case Json.Parser.TOKEN.CURLY_OPEN: 
-                            {
-                                IL_2B:
+                        case Json.Parser.TOKEN.CURLY_OPEN: {
+                              //  IL_2B:
                                 if (nextToken == Json.Parser.TOKEN.COMMA) {
                                     continue;
                                 }
@@ -176,7 +175,7 @@ namespace Google.MiniJSON {
                         case Json.Parser.TOKEN.CURLY_CLOSE:
                             return dictionary;
                     }
-                    goto IL_2B;
+                  //  goto IL_2B;
                 }
                 IL_37:
                 return null;
@@ -209,7 +208,7 @@ namespace Google.MiniJSON {
                         default:
                             goto IL_34;
                     }
-                  
+
                 }
                 return list;
             }
@@ -294,7 +293,7 @@ namespace Google.MiniJSON {
                                     default:
                                         goto IL_8C;
                                 }
-                              
+
                             }
                             flag = false;
                         }
@@ -441,7 +440,7 @@ namespace Google.MiniJSON {
                         default:
                             goto IL_40;
                     }
-                   
+
                     IL_146:;
                 }
                 this.builder.Append('"');

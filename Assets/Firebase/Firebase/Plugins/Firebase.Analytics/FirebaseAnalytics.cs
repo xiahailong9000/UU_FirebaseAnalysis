@@ -877,19 +877,22 @@ namespace Firebase.Analytics {
                 throw AppUtilPINVOKE.SWIGPendingException.Retrieve();
             }
         }
-
+        //xia9000---ÁÙÊ±ÐÞ¸Ä----
         public unsafe static void LogEvent(string name, params Parameter[] parameters) {
             IntPtr[] array = new IntPtr[parameters.Length];
             for (int i = 0; i < parameters.Length; i++) {
                 array[i] = (IntPtr)Parameter.getCPtr(parameters[i]);
             }
-            fixed (IntPtr* value = (array != null && array.Length != 0) ? ref array[0] : ref *null) {
-                FirebaseAnalyticsPINVOKE.LogEvent__SWIG_5(name, (IntPtr)((void*)value), parameters.Length);
-                if (AppUtilPINVOKE.SWIGPendingException.Pending) {
-                    throw AppUtilPINVOKE.SWIGPendingException.Retrieve();
-                }
-            }
+            //fixed (IntPtr* value = (array != null && array.Length != 0) ? ref array[0] : ref *null) {
+            //    FirebaseAnalyticsPINVOKE.LogEvent__SWIG_5(name, (IntPtr)((void*)value), parameters.Length);
+            //    if (AppUtilPINVOKE.SWIGPendingException.Pending) {
+            //        throw AppUtilPINVOKE.SWIGPendingException.Retrieve();
+            //    }
+            //}
         }
+ 
+
+
 
         public static void SetUserProperty(string name, string property) {
             FirebaseAnalyticsPINVOKE.SetUserProperty(name, property);
