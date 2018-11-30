@@ -890,9 +890,6 @@ namespace Firebase.Analytics {
             //    }
             //}
         }
- 
-
-
 
         public static void SetUserProperty(string name, string property) {
             FirebaseAnalyticsPINVOKE.SetUserProperty(name, property);
@@ -914,14 +911,17 @@ namespace Firebase.Analytics {
                 throw AppUtilPINVOKE.SWIGPendingException.Retrieve();
             }
         }
-
         internal static void SetSessionTimeoutDurationInternal(long milliseconds) {
             FirebaseAnalyticsPINVOKE.SetSessionTimeoutDurationInternal(milliseconds);
             if (AppUtilPINVOKE.SWIGPendingException.Pending) {
                 throw AppUtilPINVOKE.SWIGPendingException.Retrieve();
             }
         }
-
+        /// <summary>
+        /// …Ë÷√µ±«∞∆¡ƒª
+        /// </summary>
+        /// <param name="screenName"></param>
+        /// <param name="screenClass"></param>
         public static void SetCurrentScreen(string screenName, string screenClass) {
             FirebaseAnalyticsPINVOKE.SetCurrentScreen(screenName, screenClass);
             if (AppUtilPINVOKE.SWIGPendingException.Pending) {

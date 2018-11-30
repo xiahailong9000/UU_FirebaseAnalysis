@@ -647,6 +647,7 @@ namespace Firebase.Editor {
         }
 
         private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromPath) {
+            Debug.Log("oooooooooooooooooooooo");
             bool flag = false;
             for (int i = 0; i < importedAssets.Length; i++) {
                 string path = importedAssets[i];

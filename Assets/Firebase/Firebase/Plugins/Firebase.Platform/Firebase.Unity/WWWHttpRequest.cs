@@ -136,7 +136,7 @@ namespace Firebase.Unity {
             if (string.Equals(_action, "GET", StringComparison.OrdinalIgnoreCase) && !_headers.ContainsKey("Content-Type")) {
                 _headers["Content-Type"] = string.Empty;
             }
-
+            UnityEngine.Debug.LogError(_url.ToString());
             WWW www = new WWW(_url.ToString(), _requestBodyBytes, _headers);
             yield return www;
             TryParseResponse(www);
