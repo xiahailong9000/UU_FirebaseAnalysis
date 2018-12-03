@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "898200925370",
+    "firebase_url": "https://api-9101058431890075688-215796.firebaseio.com",
+    "project_id": "api-9101058431890075688-215796",
+    "storage_bucket": "api-9101058431890075688-215796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898200925370:android:5929dcbe0008296d",
+        "android_client_info": {
+          "package_name": "com.topifish.glider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898200925370-haqpkh0jjaoreco3idi0fv2ltes2kh39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpw5iZYEW7H7iHp1MKC04zWrh5uBiT2iE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
