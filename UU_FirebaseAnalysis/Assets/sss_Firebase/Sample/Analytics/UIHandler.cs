@@ -115,6 +115,8 @@ namespace Firebase.Sample.Analytics {
             // Log an event with a string parameter.
             DebugLog("记录组联接事件。==Logging a group join event.");
             FirebaseAnalytics.LogEvent(FirebaseAnalytics.EventJoinGroup, FirebaseAnalytics.ParameterGroupId, "spoon_welders");
+
+            FirebaseAnalytics.SetUserProperty("flghtNumber", "shas--" + UnityEngine.Random.Range(0, 4000));
         }
 
         public void AnalyticsLevelUp() {
@@ -127,6 +129,8 @@ namespace Firebase.Sample.Analytics {
                 new Parameter(FirebaseAnalytics.ParameterCharacter, "mrspoon"),
                 new Parameter("hit_accuracy", 3.14f)
                 );
+
+            FirebaseAnalytics.SetUserProperty("deathNumber", "shas--" + UnityEngine.Random.Range(0, 4000));
         }
 
         // Reset analytics data for this app instance.
